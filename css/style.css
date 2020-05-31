@@ -178,3 +178,19 @@ img{
 .contenido-contacto p{
   font-size: 1.8rem;
 }
+
+.iconos-caracteristicas{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.iconos-caracteristicas li{
+  /* flex: 1; */
+  display:flex; 
+}
+
+.iconos-caracteristicas li img {
+  margin-right: 2rem;
+}
