@@ -1,6 +1,11 @@
 /* Globales */
 html {
   font-size: 62.5%; /* Reset para rems  62.5% = 10 px de 16px */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
 }
 
 body{
@@ -22,10 +27,13 @@ h4{
   font-size: 2.6rem;
 }
 
+img{
+  max-width:100%;
+}
+
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
-
 }
 
 .contenido-header{
@@ -49,10 +57,31 @@ h4{
 .centrar-texto{
   text-align: center;
 }
-
 .seccion{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.d-block{
+  display: block !important;
+}
+.boton{
+  color:#ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+}
+
+.boton-amarillo{
+  background-color: #e08709;
+}
+
+.boton-verde{
+  background-color: #71b100;
 }
 
 /* Header */
@@ -100,4 +129,34 @@ h4{
 
 .icono h3{
   text-transform: capitalize;
+}
+
+/* Seccion casas y depas */
+.contenedor-anuncios{
+  display: flex;
+  justify-content: space-between;
+}
+
+.anuncio{
+  flex-basis: calc(33.3% - 1rem);
+  border: 1px solid #b5b5b5;
+  background-color: #f5f5f5;
+}
+
+.contenido-anuncio{
+  padding: 2rem;
+}
+
+.contenedor-anuncios h3, .contenedor-anuncios p{
+  margin-top: 0;
+}
+
+.precio{
+  color: #71b100;
+  font-weight: 700;
+}
+
+.ver-todas{
+  display: flex;
+  justify-content: flex-end;
 }
