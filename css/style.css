@@ -149,9 +149,27 @@ img{
     margin: 0;
   }
 }
-
 .navegacion a:hover{
   color: #71b100
+}
+.mobile-menu img{
+  width: 5rem;
+}
+@media (min-width: 768px) {
+  .mobile-menu{
+    display: none;
+  }
+}
+.navegacion:target{
+  display: block;
+}
+.navegacion{
+  display:none
+}
+@media (min-width: 768px) {
+  .navegacion{
+    display: block;
+  }
 }
 
 /* Seccion nosotros */
