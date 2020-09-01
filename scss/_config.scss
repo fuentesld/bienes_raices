@@ -1,0 +1,95 @@
+$primary-color: rgba(212, 208, 208, 0.995) ;
+$secondary-color: #eece1e;
+$show-home-image: true;
+$home-image: url("../img/header.jpg");
+$background-opacity: 0.9;
+
+@mixin background{
+  background-image: $home-image;
+  background-position: center center;
+  background-size: cover;
+  min-height: 60rem;
+  height: 100vh;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+h1{
+  font-size: 3.8rem;
+}
+
+h2{
+  font-size: 3.4rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+h4{
+  font-size: 2.6rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.seccion{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fw-300{
+  font-weight: 300;
+}
+
+.centrar-texto{
+  text-align: center;
+}
+
+//* Botones
+.boton{
+  color:white;
+  display:inline-block;
+  margin-top: 3rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.d-block{
+  display: block !important;
+}
+.boton-amarillo{
+  background-color: #e08709;
+}
+
+.boton-verde{
+  background-color: #71b100;
+}
+
+
+
+
+
+
+
+
