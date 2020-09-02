@@ -1,6 +1,4 @@
 @import 'config';
-@import 'nosotros';
-@import 'anuncio';
 
 html {
   box-sizing: border-box;
@@ -131,7 +129,7 @@ p.precio{
   justify-content: flex-end;
 }
 
-//* Contacto Home
+// Contacto Home
 .imagen-contacto{
   background-image: url(../img/encuentra.jpg);
   background-position: center center;
@@ -148,7 +146,7 @@ p.precio{
   }
 }
 
-// * Blog
+// * BLOG
 
 .seccion-inferior{
   display: flex;
@@ -221,7 +219,7 @@ p.precio{
   }
 }
 
-// * Footer
+// Footer
 .site-footer{
   background-color: #333;
   margin: 0;
@@ -237,6 +235,81 @@ p.precio{
 
 }
 
+// * NOSOTROS
+//  Header
 
+.site-header{
+  background-color: #333;
+  padding: 1rem 0 3rem 0;
+}
 
+// internas
+.contenido-nosotros{
+  display:grid;
+  grid-template-columns: repeat( 2, 1fr);
+  column-gap: 2rem;
+}
 
+.texto-nosotros blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 1rem 0 3rem 0;
+}
+// * Anuncio
+.resumen-propiedad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// * CONTACTO
+.contacto {
+  & p {
+  font-size: 1.8rem;
+  color: #4f4f4f;
+  margin: 2rem 0 0 0;
+  }
+}
+
+legend{
+  font-size: 2.4rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input:not([type="submit"]), textarea, select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type="radio"]{
+  width:auto;
+  margin:0;
+}
+
+textarea{
+  height: 20rem
+}
+
+// select{
+//   -webkit-appearance: none;
+//   appearance: none;
+// }
+
+.forma-contacto{
+  max-width: 30rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}

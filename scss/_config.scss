@@ -70,13 +70,17 @@ img{
 //* Botones
 .boton{
   color:white;
+  border: none;
   display:inline-block;
-  margin-top: 3rem;
   font-weight: 700;
   font-size: 1.8rem;
+  margin-top: 3rem;
   padding: 1rem 3rem;
   text-align: center;
   text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .d-block{
