@@ -46,6 +46,7 @@ img{
 }
 
 .contenedor {
+  width: 95%;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -71,7 +72,8 @@ img{
 .boton{
   color:white;
   border: none;
-  display:inline-block;
+  display: block;
+  flex: 0 0 100%;
   font-weight: 700;
   font-size: 1.8rem;
   margin-top: 3rem;
@@ -80,6 +82,13 @@ img{
   text-decoration: none;
   &:hover{
     cursor: pointer;
+  }
+}
+
+@media (min-width: 768px){
+  .boton{
+    display: inline-block;
+    flex: 0 0 auto;
   }
 }
 
@@ -93,8 +102,6 @@ img{
 .boton-verde{
   background-color: #71b100;
 }
-
-
 
 
 
