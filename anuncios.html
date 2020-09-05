@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienes Raices</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,20 +13,28 @@
   <header class="site-header">
     <div class="contenedor contenido-header">
       <div class="barra">
-        <a href="index.html"> 
+        <a class="logo" href="index.html"> 
           <img src="img/logo.svg" alt="logotipo de bienes raices">
-        </a> 
-        <div class="mobile-menu">
-          <a href="#navegacion">
-            <img src="img/barras.svg" alt="icono menu">
-          </a>
+        </a>
+        <div class="icono-menu">
+          <div class="open-menu">
+            <!-- <a href="#navegacion"> -->
+              <i class="fas fa-bars fa-2x"></i>
+              <!-- <img src="img/barras.svg" alt="icono menu"> -->
+            <!-- </a> -->
+          </div>
+          <div class="close-menu">
+            <i class="fas fa-times fa-2x"></i>
+          </div>
         </div>
-        <nav id="navegacion" class="navegacion">
-          <a href="nosotros.html">Nosotros</a>
-          <a href="anuncios.html">Anuncios</a>
-          <a href="blog.html">Blog</a>
-          <a href="contacto.html">Contacto</a>
+  
+        <nav class="navegacion">
+          <a class="nav-items" href="nosotros.html">Nosotros</a>
+          <a class="nav-items current" href="anuncios.html">Anuncios</a>
+          <a class="nav-items" href="blog.html">Blog</a>
+          <a class="nav-items" href="contacto.html">Contacto</a>
         </nav>        
+      </div>
     </div>
       
   </header>
@@ -192,5 +201,8 @@
     </div>
 
   </footer>
+
+  <script src="js/main.js"></script>
+  
 </body>
 </html>
