@@ -77,14 +77,14 @@ body {
   background-image: url("../img/header.jpg");
   background-position: center center;
   background-size: cover;
-  min-height: 50rem;
+  min-height: 40rem;
   height: 100vh; }
 
 .main-title {
   display: flex;
   flex-direction: column; }
   .main-title i {
-    align-self: center;
+    align-self: flex-end;
     color: white;
     animation-duration: 2s; }
 
