@@ -77,8 +77,24 @@ body {
   background-image: url("../img/header.jpg");
   background-position: center center;
   background-size: cover;
-  min-height: 60rem;
+  min-height: 50rem;
   height: 100vh; }
+
+.main-title {
+  display: flex;
+  flex-direction: column; }
+  .main-title i {
+    align-self: center;
+    color: white;
+    animation-duration: 2s; }
+
+@media (max-width: 767px) {
+  .main-title h1 {
+    font-size: 2.2rem; } }
+
+@media (min-width: 768px) {
+  .main-title h1 {
+    animation-duration: 0s; } }
 
 .contenido-header {
   display: flex;
@@ -139,8 +155,13 @@ body {
     display: block; }
 
 @media (min-width: 768px) {
+  nav.navegacion {
+    animation-duration: 0s; }
   .navegacion {
-    display: block; }
+    display: flex;
+    justify-content: flex-end;
+    animation: none;
+    animation-duration: 0s; }
     .navegacion a {
       display: inline-block;
       font-size: 2.2rem;
@@ -149,6 +170,10 @@ body {
         margin-right: 0; }
     .navegacion .nav-items {
       font-size: 2rem; } }
+
+@media (max-width: 767) {
+  nav.navegacion {
+    animation-duration: 2s; } }
 
 .open-menu i, .close-menu i {
   color: white;
