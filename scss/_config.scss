@@ -8,8 +8,8 @@ $background-opacity: 0.9;
   background-image: $home-image;
   background-position: center center;
   background-size: cover;
-  min-height: 40rem;
-  height: 100`vh;
+  min-height: 56rem;
+  height: 100vh;
 }
 
 @mixin easeOut {
